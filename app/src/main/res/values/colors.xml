@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1732ff</color>
+    <color name="colorPrimaryDark">#394de3</color>
+    <color name="colorAccent">#5769f7</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="dark_purple">#ab05f7</color>
+    <color name="colorGray">#607D8B</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    
+    <color name="colorBackground_black">#0A0808</color>
+
+    <color name="windowBackground_light">#acc7f2</color>
+    <color name="windowBackground_dark">#33343B</color>
+
+    <color name="dot_inactive">#05dff7</color>
+
+    <!-- DOTS COLOR -->
+
+    <array name="array_dot_active">
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+    </array>
+
+</resources>
