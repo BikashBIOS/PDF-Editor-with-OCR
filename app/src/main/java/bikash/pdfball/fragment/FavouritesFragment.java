@@ -181,11 +181,11 @@ public class FavouritesFragment extends Fragment
         startActivity(new Intent(this.getContext(), FavouritesActivity.class));
     }
 
-    @Override
+    /*@Override
     public void onPrepareOptionsMenu(Menu menu) {
         menu.findItem(R.id.menu_favourites_item).setVisible(false);
         super.onPrepareOptionsMenu(menu);
-    }
+    }*/
 
     /**
      * This method checks for the favourites from preferences list

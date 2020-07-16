@@ -108,19 +108,19 @@ public class CommonCodeUtils {
                 new HomePageItem(R.id.nav_excel_to_pdf,
                         R.drawable.ic_excel, R.string.excel_to_pdf));
 
-        mFragmentPositionMap.put(homePageItems ? R.id.view_files : R.id.view_files_fav,
+        /*mFragmentPositionMap.put(homePageItems ? R.id.view_files : R.id.view_files_fav,
                 new HomePageItem(R.id.nav_gallery,
                         R.drawable.ic_menu_gallery, R.string.viewFiles));
 
         mFragmentPositionMap.put(homePageItems ? R.id.rotate_pages : R.id.rotate_pages_fav,
                 new HomePageItem(R.id.nav_gallery,
-                        R.drawable.baseline_crop_rotate_24, R.string.rotate_pages));
+                        R.drawable.baseline_crop_rotate_24, R.string.rotate_pages));*/
 
         mFragmentPositionMap.put(homePageItems ? R.id.extract_text : R.id.extract_text_fav,
                 new HomePageItem(R.id.nav_text_extract,
                         R.drawable.ic_broken_image_black_24dp, R.string.extract_text));
 
-        mFragmentPositionMap.put(homePageItems ? R.id.add_watermark : R.id.add_watermark_fav,
+        /*mFragmentPositionMap.put(homePageItems ? R.id.add_watermark : R.id.add_watermark_fav,
                 new HomePageItem(R.id.nav_add_watermark,
                         R.drawable.ic_branding_watermark_black_24dp, R.string.add_watermark));
 
@@ -130,13 +130,13 @@ public class CommonCodeUtils {
 
         mFragmentPositionMap.put(homePageItems ? R.id.split_pdf : R.id.split_pdf_fav,
                 new HomePageItem(R.id.nav_split,
-                        R.drawable.ic_call_split_black_24dp, R.string.split_pdf));
+                        R.drawable.ic_call_split_black_24dp, R.string.split_pdf));*/
 
         mFragmentPositionMap.put(homePageItems ? R.id.text_to_pdf : R.id.text_to_pdf_fav,
                 new HomePageItem(R.id.nav_text_to_pdf,
                         R.drawable.ic_text_format_black_24dp, R.string.text_to_pdf));
 
-        mFragmentPositionMap.put(homePageItems ? R.id.compress_pdf : R.id.compress_pdf_fav,
+        /*mFragmentPositionMap.put(homePageItems ? R.id.compress_pdf : R.id.compress_pdf_fav,
                 new HomePageItem(R.id.nav_compress_pdf,
                         R.drawable.ic_compress_image, R.string.compress_pdf));
 
@@ -179,15 +179,15 @@ public class CommonCodeUtils {
 
         mFragmentPositionMap.put(homePageItems ? R.id.invert_pdf : R.id.invert_pdf_fav,
                 new HomePageItem(R.id.nav_invert_pdf,
-                        R.drawable.ic_invert_color_24dp, R.string.invert_pdf));
+                        R.drawable.ic_invert_color_24dp, R.string.invert_pdf));*/
 
         mFragmentPositionMap.put(homePageItems ? R.id.zip_to_pdf : R.id.zip_to_pdf_fav,
                 new HomePageItem(R.id.nav_zip_to_pdf,
                         R.drawable.ic_zip_to_pdf, R.string.zip_to_pdf));
 
-        mFragmentPositionMap.put(homePageItems ? R.id.add_text : R.id.add_text_fav,
+        /*mFragmentPositionMap.put(homePageItems ? R.id.add_text : R.id.add_text_fav,
                 new HomePageItem(R.id.nav_add_text,
-                        R.drawable.ic_text_format_black_24dp, R.string.add_text));
+                        R.drawable.ic_text_format_black_24dp, R.string.add_text));*/
 
         return mFragmentPositionMap;
 

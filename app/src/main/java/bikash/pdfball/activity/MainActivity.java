@@ -140,10 +140,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.menu_favourites_item) {
+        /*if (item.getItemId() == R.id.menu_favourites_item) {
             setTitle(R.string.favourites);
             mFragmentManagement.favouritesFragmentOption();
-        }
+        }*/
         if (item.getItemId() == R.id.menu_ocr_item) {
             setTitle(R.string.ocr);
             Intent intent=new Intent(MainActivity.this, OcrActivity.class);

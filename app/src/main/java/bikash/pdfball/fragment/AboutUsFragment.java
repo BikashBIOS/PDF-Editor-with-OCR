@@ -32,8 +32,8 @@ public class AboutUsFragment extends Fragment {
         try {
             PackageInfo packageInfo = mActivity.getPackageManager().getPackageInfo(mActivity.getPackageName(), 0);
             TextView versionText = rootView.findViewById(R.id.version_value);
-            String version = versionText.getText().toString() + " " + packageInfo.versionName;
-            versionText.setText(version);
+           // String version = versionText.getText().toString() + " " + packageInfo.versionName;
+           // versionText.setText(version);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }

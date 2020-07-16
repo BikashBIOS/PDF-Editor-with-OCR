@@ -11,7 +11,12 @@
         android:orientation="vertical"
         tools:context=".HomeFragment">
 
-        <TextView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/welcomeee"/>
+
+        <!--<TextView
             android:id="@+id/recent_lbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +40,7 @@
                 app:spanCount="3"
                 />
 
-        </LinearLayout>
+        </LinearLayout>-->
 
 
         <TextView
@@ -43,6 +48,7 @@
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:text="@string/create_new_pdfs"
+            android:layout_marginTop="50dp"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -62,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
                     app:option_icon="@drawable/ic_menu_camera"
-                    app:option_text="Images to PDF" />
+                    app:option_text="Scan Images" />
 
                 <bikash.pdfball.customviews.MyCardView
                     android:id="@+id/text_to_pdf"
@@ -98,7 +104,7 @@
 
         </LinearLayout>
 
-        <TextView
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5sp"
@@ -313,9 +319,9 @@
                 android:layout_weight="1.0"
                 app:option_icon="@drawable/ic_image_black_24dp"
                 app:option_text="@string/pdf_to_images" />
-        </LinearLayout>
+        </LinearLayout>-->
 
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -335,7 +341,7 @@
                 android:layout_weight="1.0"
                 app:option_icon="@drawable/ic_zip_to_pdf"
                 app:option_text="@string/zip_to_pdf" />
-        </LinearLayout>
+        </LinearLayout>-->
 
     </LinearLayout>
 

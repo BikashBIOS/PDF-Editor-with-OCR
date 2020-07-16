@@ -11,7 +11,7 @@
     
     <color name="colorBackground_black">#0A0808</color>
 
-    <color name="windowBackground_light">#acc7f2</color>
+    <color name="windowBackground_light">#ffffff</color>
     <color name="windowBackground_dark">#33343B</color>
 
     <color name="dot_inactive">#05dff7</color>

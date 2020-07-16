@@ -56,7 +56,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     MyCardView qrbarcodeToPdf;
     @BindView(R.id.text_to_pdf)
     MyCardView textToPdf;
-    @BindView(R.id.view_files)
+   /* @BindView(R.id.view_files)
     MyCardView viewFiles;
     @BindView(R.id.view_history)
     MyCardView viewHistory;
@@ -89,12 +89,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @BindView(R.id.invert_pdf)
     MyCardView invertPdf;
     @BindView(R.id.zip_to_pdf)
-    MyCardView zipToPdf;
+    MyCardView zipToPdf;*/
     @BindView(R.id.excel_to_pdf)
     MyCardView excelToPdf;
-    @BindView(R.id.extract_text)
-    MyCardView extractText;
-    @BindView(R.id.add_text)
+    /*@BindView(R.id.extract_text)
+    MyCardView extractText;*/
+    /*@BindView(R.id.add_text)
     MyCardView addText;
 
     @BindView(R.id.recent_list)
@@ -104,7 +104,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     View recentLabel;
 
     @BindView(R.id.recent_list_lay)
-    ViewGroup recentLayout;
+    ViewGroup recentLayout;*/
 
     private Map<Integer, HomePageItem> mFragmentPositionMap;
     private RecentListAdapter mAdapter;
@@ -120,7 +120,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         imagesToPdf.setOnClickListener(this);
         qrbarcodeToPdf.setOnClickListener(this);
         textToPdf.setOnClickListener(this);
-        viewFiles.setOnClickListener(this);
+        /*viewFiles.setOnClickListener(this);
         viewHistory.setOnClickListener(this);
         splitPdf.setOnClickListener(this);
         mergePdf.setOnClickListener(this);
@@ -136,13 +136,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         addImages.setOnClickListener(this);
         removeDuplicatePages.setOnClickListener(this);
         invertPdf.setOnClickListener(this);
-        zipToPdf.setOnClickListener(this);
+        zipToPdf.setOnClickListener(this);*/
         excelToPdf.setOnClickListener(this);
-        extractText.setOnClickListener(this);
-        addText.setOnClickListener(this);
+        //extractText.setOnClickListener(this);
+        /*addText.setOnClickListener(this);*/
 
         mAdapter =  new RecentListAdapter(this);
-        recentList.setAdapter(mAdapter);
+        /*recentList.setAdapter(mAdapter);*/
         return rootview;
     }
 
@@ -155,15 +155,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             LinkedHashMap<String, Map<String, String>> mRecentList = RecentUtil.getInstance()
                     .getList(PreferenceManager.getDefaultSharedPreferences(mActivity));
             if (!mRecentList.isEmpty()) {
-                recentLabel.setVisibility(View.VISIBLE);
-                recentLayout.setVisibility(View.VISIBLE);
+                /*recentLabel.setVisibility(View.VISIBLE);
+                recentLayout.setVisibility(View.VISIBLE);*/
                 List<String> featureItemIds = new ArrayList<>(mRecentList.keySet());
                 List<Map<String, String>> featureItemList = new ArrayList<>(mRecentList.values());
                 mAdapter.updateList(featureItemIds, featureItemList);
                 mAdapter.notifyDataSetChanged();
             } else {
-                recentLabel.setVisibility(View.GONE);
-                recentLayout.setVisibility(View.GONE);
+                /*recentLabel.setVisibility(View.GONE);
+                recentLayout.setVisibility(View.GONE);*/
             }
 
         } catch (JSONException e) {
@@ -209,7 +209,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.text_to_pdf:
                 fragment = new TextToPdfFragment();
                 break;
-            case R.id.view_files:
+            /*case R.id.view_files:
                 fragment = new ViewFilesFragment();
                 break;
             case R.id.view_history:
@@ -276,7 +276,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.invert_pdf:
                 fragment = new InvertPdfFragment();
-                break;
+                break;*/
             case R.id.zip_to_pdf:
                 fragment = new ZipToPdfFragment();
                 break;
@@ -286,9 +286,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.extract_text:
                 fragment = new ExtractTextFragment();
                 break;
-            case R.id.add_text:
+            /*case R.id.add_text:
                 fragment = new AddTextFragment();
-                break;
+                break;*/
         }
 
         try {
