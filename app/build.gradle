@@ -117,6 +117,7 @@ dependencies {
 
     // color picker
     implementation 'com.github.danielnilsson9:color-picker-view:1.4.0@aar'
+    implementation 'com.google.android.gms:play-services-vision:15.0.0'
 
 
     testImplementation 'org.mockito:mockito-core:2.23.4'

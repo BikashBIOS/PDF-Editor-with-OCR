@@ -2,6 +2,7 @@ package bikash.pdfball.fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -12,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import org.json.JSONException;
 
@@ -21,6 +23,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import bikash.pdfball.OcrActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import bikash.pdfball.R;
@@ -113,6 +116,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         ButterKnife.bind(this, rootview);
         mFragmentPositionMap = CommonCodeUtils.getInstance().fillNavigationItemsMap(true);
 
+
         imagesToPdf.setOnClickListener(this);
         qrbarcodeToPdf.setOnClickListener(this);
         textToPdf.setOnClickListener(this);
@@ -145,6 +149,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override public void onViewCreated(
         @NonNull final View view, @Nullable final Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
 
         try {
             LinkedHashMap<String, Map<String, String>> mRecentList = RecentUtil.getInstance()

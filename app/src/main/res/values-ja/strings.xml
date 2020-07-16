@@ -12,6 +12,7 @@
     <string name="search">search</string>
     <string name="welcome_excel_to_pdf">Excel to PDF</string>
     <string name="welcome_excel_to_pdf_message">Extract all tables of Excel file in a PDF at a go.</string>
+    <string name="ocr">OCR</string>
 
     <string name="details"><b>詳細</b></string>
 

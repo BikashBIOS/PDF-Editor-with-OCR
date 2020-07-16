@@ -336,6 +336,8 @@
                 app:option_icon="@drawable/ic_zip_to_pdf"
                 app:option_text="@string/zip_to_pdf" />
         </LinearLayout>
+
     </LinearLayout>
+
 
 </ScrollView>

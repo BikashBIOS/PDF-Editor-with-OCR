@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.multidex.BuildConfig;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -20,7 +21,7 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-import bikash.pdfball.BuildConfig;
+import bikash.pdfball.OcrActivity;
 import bikash.pdfball.R;
 import bikash.pdfball.fragment.ImageToPdfFragment;
 import bikash.pdfball.providers.fragmentmanagement.FragmentManagement;
@@ -142,6 +143,11 @@ public class MainActivity extends AppCompatActivity
         if (item.getItemId() == R.id.menu_favourites_item) {
             setTitle(R.string.favourites);
             mFragmentManagement.favouritesFragmentOption();
+        }
+        if (item.getItemId() == R.id.menu_ocr_item) {
+            setTitle(R.string.ocr);
+            Intent intent=new Intent(MainActivity.this, OcrActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

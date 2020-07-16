@@ -45,7 +45,7 @@ public class AboutUsFragment extends Fragment {
     public void sendmail() {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"bikash@gmail.com"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"bikash.ultracures@gmail.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT, mActivity.getResources().getString(R.string.feedback_subject));
         intent.putExtra(Intent.EXTRA_TEXT, mActivity.getResources().getString(R.string.feedback_text));
         mFeedbackUtils.openMailIntent(intent);
@@ -53,39 +53,37 @@ public class AboutUsFragment extends Fragment {
 
     @OnClick(R.id.layout_website)
     void openWeb() {
-        mFeedbackUtils.openWebPage("http://bikash.github.io/Images-to-PDF/");
+        mFeedbackUtils.openWebPage("");
     }
 
     @OnClick(R.id.layout_slack)
     void joinSlack() {
-        mFeedbackUtils.openWebPage("https://join.slack.com/t/imagestopdf/shared_invite/" +
-                "enQtNDA2ODk1NDE3Mzk3LTUwNjllYzY5YWZkZDliY2FmNDhkNmM1NjIwZTc1Y" +
-                "jU4NTgxNWI0ZDczMWQxMTEyZjA0M2Y5N2RlN2NiMWRjZGI");
+        mFeedbackUtils.openWebPage("" );
     }
 
     @OnClick(R.id.layout_github)
     void githubRepo() {
-        mFeedbackUtils.openWebPage("https://github.com/bikash/Images-to-PDF");
+        mFeedbackUtils.openWebPage("https://github.com/BikashRanjanOjha/PDF-Editor");
     }
 
     @OnClick(R.id.layout_contri)
     void contributorsList() {
-        mFeedbackUtils.openWebPage("https://github.com/bikash/Images-to-PDF/graphs/contributors");
+        mFeedbackUtils.openWebPage("");
     }
 
     @OnClick(R.id.layout_playstore)
     void openPlaystore() {
-        mFeedbackUtils.openWebPage("https://play.google.com/store/apps/details?id=bikash.createpdf");
+        mFeedbackUtils.openWebPage("");
     }
 
     @OnClick(R.id.layout_privacy)
     void privacyPolicy() {
-        mFeedbackUtils.openWebPage("https://sites.google.com/view/privacy-policy-image-to-pdf/home");
+        mFeedbackUtils.openWebPage("");
     }
 
     @OnClick(R.id.layout_license)
     void license() {
-        mFeedbackUtils.openWebPage("https://github.com/bikash/Images-to-PDF/blob/master/LICENSE.md");
+        mFeedbackUtils.openWebPage("");
     }
 
     @Override
